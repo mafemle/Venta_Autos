@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VentaActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="340dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="428dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Comprar Auto"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="281dp"
+            android:layout_height="88dp"
+            app:srcCompat="@mipmap/unnamed"
+            tools:layout_gravity="center" />
+
+        <EditText
+            android:id="@+id/etusuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:hint="Usuario" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="390dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+        <EditText
+            android:id="@+id/etplaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Placa"
+            android:inputType="textPersonName"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btbuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="buscarplaca"
+            android:text="buscar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="340dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="119dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+        <EditText
+            android:id="@+id/etmodelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Modelo"
+            android:inputType="textPersonName"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/etmarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Marca"
+            android:inputType="textPersonName"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/etcolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Color"
+            android:inputType="textPersonName"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/etvalor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Valor"
+            android:inputType="textPersonName"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="81dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+        <Button
+            android:id="@+id/btcomprar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="comprar"
+            android:text="comprar" />
+
+        <Button
+            android:id="@+id/btregresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="regresarventas"
+            android:text="regresar" />
+
+        <Button
+            android:id="@+id/btcancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="cancelarventas"
+            android:text="cancelar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

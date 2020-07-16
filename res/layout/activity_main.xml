@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="116dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="11dp"
+        android:gravity="center"
+        android:text="Ingresar"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="309dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/etusuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@mipmap/usuario" />
+
+    <EditText
+        android:id="@+id/etusuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Digita el Usuario"
+        android:inputType="textPersonName"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/etclave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/etclave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Digite su Clave"
+        android:inputType="textPassword"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/btregistrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etusuario" />
+
+    <Button
+        android:id="@+id/btingresar"
+        android:layout_width="131dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="21dp"
+        android:gravity="center"
+        android:text="Ingresar"
+        android:textSize="20dp"
+        android:onClick="ventas"
+        app:layout_constraintBottom_toTopOf="@+id/btautos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btregistrarse" />
+
+    <Button
+        android:id="@+id/btregistrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Registrarse"
+        android:textSize="20dp"
+        android:onClick="clientes"
+        app:layout_constraintBottom_toTopOf="@+id/btingresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etclave" />
+
+    <Button
+        android:id="@+id/btautos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="55dp"
+        android:gravity="center"
+        android:text="Registrar Auto"
+        android:textSize="20dp"
+        android:onClick="autos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btingresar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
